@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="v0.01" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/v0" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/v0" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="/home/afreak/Downloads/bullet-2.81-rev2613/src" />
+		</Compiler>
+		<Linker>
+			<Add option="-lGLEW" />
+			<Add option="-lglfw" />
+			<Add option="-lSDL" />
+			<Add option="-lSDL_image" />
+			<Add library="/home/afreak/externalCPPprograms/bullet/bin/Debug/libbullet.a" />
+		</Linker>
+		<Unit filename="DistanceConstraint.h" />
+		<Unit filename="Edges.cpp" />
+		<Unit filename="Edges.h" />
+		<Unit filename="MouseFire.cpp" />
+		<Unit filename="MouseFire.h" />
+		<Unit filename="Obj.cpp" />
+		<Unit filename="Obj.h" />
+		<Unit filename="Phys.cpp" />
+		<Unit filename="Phys.h" />
+		<Unit filename="Rope.cpp" />
+		<Unit filename="Rope.h" />
+		<Unit filename="Window.cpp" />
+		<Unit filename="Window.h" />
+		<Unit filename="hMotionState.cpp" />
+		<Unit filename="hMotionState.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="shaderCompile.cpp" />
+		<Unit filename="shaderCompile.h" />
+		<Unit filename="square.cpp" />
+		<Unit filename="square.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
